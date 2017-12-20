@@ -102,57 +102,6 @@ def obter_vizinho_melhor_avaliacao(vizinhos_avaliacao, lista_tabu, melhor_soluca
       break
   return posicao
 
-#while (existe):
- #   if(max_vizinhos in lista_tabu):
-
-  #  else:
-#pass
-  #  pass
-
-
-
-  #if len(lista_tabu) != 0:
-   # for j in (0,len(vizinhos_avaliacao)):
-##for i in (0,len(lista_tabu)):
-#if vizinhos[posicao]==lista_tabu[i]:
-     #     break
-    #    elif i==len(lista_tabu):
-#lista_tabu.append(vizinhos[j])
-    #       break
-#else:
-      #    pass
-     # vizinhos_avaliacao.pop(posicao)
-#vizinhos.pop(posicao)
-#3#  maxima_avaliacao = max(vizinhos_avaliacao)  
-    #  posicao = vizinhos_avaliacao.index(maxima_avaliacao)    
-  #else:
-   # lista_tabu.append(vizinhos[posicao])   
-
-	# verifica se a lista tabu não possui elementos
-  #if len(lista_tabu) != 0:
-		# se possuir, é porque tem bit proibido, então pega esse bit
-   # bit_proibido = lista_tabu[0]
-	# for para obter a posição do melhor vizinho
-  #for i in range(0, len(vizinhos_avaliacao)):
-   # if vizinhos_avaliacao[i] == maxima_avaliacao:
-    #  pos = i
-    #  break
-	# verifico se o vizinho é resultado de movimento proibido
- # if bit_proibido != -1:
-		# se for, então obtém a posição do bit que foi modificado para gerar esse vizinho
-   # bit_pos = obter_bit_modificado(melhor_solucao, vizinhos[pos])
-		# verifica se é um bit que está na lista_tabu (compara com bit_proibido)
-#if bit_pos == bit_proibido:
-			# se cair nesse if, então procura o segundo melhor vizinho
-      #melhor_pos = 0
-#for i in range(1, len(vizinhos_avaliacao)):
-#if i != bit_pos:
-       #   if vizinhos_avaliacao[i] > vizinhos_avaliacao[melhor_pos]:
-#melhor_pos = i
-#return melhor_pos # retorna a posição do segundo melhor vizinho
-  #return pos # retorna a posição do melhor vizinho
-
-
 def pegarPesosCnae(cnae):
   
   doisprimeirosnumero = cnae[:2]
@@ -338,21 +287,6 @@ def funcaovalidarCabecalho(conteudoDaColuna, nomedaColuna):
      return False
   else:
     return True
-
-#def validarCabecalhoArquivo(LinhasArquivo):    
- #   colunasdoCabecalho = LinhasArquivo[0].split(",")
-  #  if(len(colunasdoCabecalho)==TamanhoDaLinha):
-      #print(colunasdoCabecalho[3])
-   #   if (funcaovalidarCabecalho(colunasdoCabecalho[0],NomeColunaCNPJ)  and 
-   #     funcaovalidarCabecalho(colunasdoCabecalho[1],NomeColunaNumeroDeEmpregados) and 
-    #    funcaovalidarCabecalho(colunasdoCabecalho[2],NomeColunaCNAE)):
-    #    return True        
-     # else:
-     #   textoLog.append(dataParaOArquivoLog+" | "+"cabeçaçho invalido\n")
-     #   return False        
-   # else:
-    #  return False
-    #  textoLog.append(dataParaOArquivoLog+" | "+"O cabeçalho possui o tamanho diferente\n")      
 
 def validarExistenciaDoAqruivo(nomeDOArquivo):
   if(os.path.exists(nomeDOArquivo)==True):
